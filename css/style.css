@@ -68,6 +68,7 @@
     font-size: 28px;
     color: #3BB6D5;
     line-height: 80px;
+    cursor: pointer;
   }
   .snav__list{
     font-size: 18px;
@@ -96,7 +97,7 @@
     left: 0px; */
   }
   .content{
-    min-width: 360px;
+    width: 385px;
   }
   .content__ttl{
     line-height: 35px;
@@ -117,6 +118,12 @@
     box-shadow: 0px 3px 6px #00000029;
     font-size: 14px;
     cursor: pointer;
+  }
+  .page-two .content__btn{
+    visibility: hidden;
+  }
+  .page-three .content__btn{
+    visibility: hidden;
   }
 
   .sec__ttl{
@@ -146,11 +153,11 @@
   }
   .page-two{
     background-image: url(../img/top2.png);
-    display: none;
+    /* display: none; */
   }
   .page-three{
     background-image: url(../img/top3.png);
-    display: none;
+    /* display: none; */
   }
 
   .page-oneres{
@@ -179,10 +186,12 @@
 
   .fview__ttl{
     font-size: 42px;
+    line-height: 40px;
   }
 
   .fview__message{
     font-size: 16px;
+    height: 80px;
   }
 
   .fview__btn{
@@ -364,6 +373,7 @@
   .fnav__list--item{
     font-size: 18px;
     padding-right: 28px;
+    line-height: 36px;
   }
   
 
@@ -372,4 +382,22 @@
     padding-top: 40px;
     padding-bottom: 16px;
     font-size: 12px;
+  }
+
+  /* ======================================================
+  スライド
+  ========================================================= */
+  .slide--one{
+    display: none;
+  }
+  .slide--two{
+    display: none;
+  }
+
+  .slide--three{
+    display: none;
+  }
+
+  .active{
+    display: block;
   }

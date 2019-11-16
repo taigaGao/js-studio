@@ -7,6 +7,7 @@
 <title>Document</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- <script type="text/javascript" src="./script/jquery.bgswitcher.js"></script> -->
+<!-- <script type="text/javascript" src="./script/jquery.slide.js"></script> -->
 <script type="text/javascript" src="./script/script.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 <link rel="stylesheet" type="text/css" href="./css/reset.css">
@@ -33,70 +34,93 @@
         </nav>
     </header>
     <main class="main">
-        <section class="sec__one bg-slider page-one">
-            <div class="container">
-                <div class="content">
-                    <h2 class="content__ttl fview__ttl">We value customers <br>more than anyone.</h2>
-                    <h3 class="content__message fview__message">We’re a creative digital marketing company that <br>helps you bring better results.</h3>
-                    <p class="content__btn fview__btn">MORE</p>
+        <section id="slide">
+            <li class="slide--one active">
+                <div class="sec__one bg-slider page-one">
+                    <div class="container">
+                        <div class="content">
+                            <h2 class="content__ttl fview__ttl">We value customers <br>more than anyone.</h2>
+                            <h3 class="content__message fview__message">We’re a creative digital marketing company that <br>helps you bring better results.</h3>
+                            <p class="content__btn fview__btn">MORE</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="sec__one--responsive page-oneres">
+                        <img class="bkgimg__responsive" src="./img/top1.png" alt="">
+                        <div class="container">
+                            <div class="content--responsive">
+                                <h2 class="content__ttl fview__ttl">We value customers <br>more than anyone.</h2>
+                                <h3 class="content__message fview__message">We’re a creative digital marketing company that <br>helps you bring better results.</h3>
+                                <p class="content__btn fview__btn content__btn--responsive">MORE</p>
+                            </div>
+                        </div>
+                </div>
+                <div class="slide__btn">
+                    <i class="fas fa-circle slide__btn--icon index__btn--one btn__active"></i>
+                    <i class="fas fa-circle slide__btn--icon index__btn--two"></i>
+                    <i class="fas fa-circle slide__btn--icon index__btn--three"></i>
+                </div>
+            </li>
+            <li class="slide--two">
+                <div class="sec__one bg-slider page-two">
+                    <div class="container">
+                        <div class="content">
+                            <h2 class="content__ttl fview__ttl">We’re a creative <br>marketing team</h2>
+                            <h3 class="content__message fview__message">We’re a creative digital marketing company <br>that helps you bring better results.</h3>
+                            <p class="content__btn fview__btn">MORE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec__one--responsive page-twores">
+                    <img class="bkgimg__responsive" src="./img/top2.png" alt="">
+                    <div class="container">
+                        <div class="content--responsive">
+                            <h2 class="content__ttl fview__ttl">We’re a creative <br>marketing team</h2>
+                            <h3 class="content__message fview__message">We’re a creative digital marketing company <br>that helps you bring better results.</h3>
+                            <p class="content__btn fview__btn content__btn--responsive">MORE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide__btn">
+                    <i class="fas fa-circle slide__btn--icon index__btn--one"></i>
+                    <i class="fas fa-circle slide__btn--icon index__btn--two btn__active"></i>
+                    <i class="fas fa-circle slide__btn--icon index__btn--three"></i>
+                </div>
+            </li>
+            <li class="slide--three">
+                <div class="sec__one bg-slider page-three">
+                    <div class="container">
+                        <div class="content">
+                            <h2 class="content__ttl fview__ttl">Enjoy your Website <br>and make it better!</h2>
+                            <h3 class="content__message fview__message">Enjoy a combination of strategy, results, <br>and service, that create the best experience <br>possible.</h3>
+                            <p class="content__btn fview__btn">MORE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec__one--responsive page-threeres">
+                    <img class="bkgimg__responsive" src="./img/top3.png" alt="">
+                    <div class="container">
+                        <div class="content--responsive">
+                            <h2 class="content__ttl fview__ttl">Enjoy your Website <br>and make it better!</h2>
+                            <h3 class="content__message fview__message">Enjoy a combination of strategy, results, <br>and service, that create the best experience <br>possible.</h3>
+                            <p class="content__btn fview__btn content__btn--responsive">MORE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide__btn">
+                    <i class="fas fa-circle slide__btn--icon index__btn--one"></i>
+                    <i class="fas fa-circle slide__btn--icon index__btn--two"></i>
+                    <i class="fas fa-circle slide__btn--icon index__btn--three btn__active"></i>
+                </div>
+            </li>
         </section>
-        <div class="sec__one--responsive page-oneres">
-            <img class="bkgimg__responsive" src="./img/top1.png" alt="">
+        <!-- <div class="slide__btn">
             <div class="container">
-                <div class="content--responsive">
-                    <h2 class="content__ttl fview__ttl">We value customers <br>more than anyone.</h2>
-                    <h3 class="content__message fview__message">We’re a creative digital marketing company that <br>helps you bring better results.</h3>
-                    <p class="content__btn fview__btn content__btn--responsive">MORE</p>
-                </div>
+                <i class="fas fa-circle slide__btn--icon index-btn btn__active"></i>
+                <i class="fas fa-circle slide__btn--icon index-btn"></i>
+                <i class="fas fa-circle slide__btn--icon index-btn"></i>
             </div>
-        </div>
-        <section class="sec__one bg-slider page-two">
-            <div class="container">
-                <div class="content">
-                    <h2 class="content__ttl fview__ttl">We value customers <br>more than anyone.</h2>
-                    <h3 class="content__message fview__message">We’re a creative digital marketing company that <br>helps you bring better results.</h3>
-                    <p class="content__btn fview__btn">MORE</p>
-                </div>
-            </div>
-        </section>
-        <div class="sec__one--responsive page-twores">
-            <img class="bkgimg__responsive" src="./img/top2.png" alt="">
-            <div class="container">
-                <div class="content--responsive">
-                    <h2 class="content__ttl fview__ttl">We value customers <br>more than anyone.</h2>
-                    <h3 class="content__message fview__message">We’re a creative digital marketing company that <br>helps you bring better results.</h3>
-                    <p class="content__btn fview__btn content__btn--responsive">MORE</p>
-                </div>
-            </div>
-        </div>
-        <section class="sec__one bg-slider page-three">
-            <div class="container">
-                <div class="content">
-                    <h2 class="content__ttl fview__ttl">We value customers <br>more than anyone.</h2>
-                    <h3 class="content__message fview__message">We’re a creative digital marketing company that <br>helps you bring better results.</h3>
-                    <p class="content__btn fview__btn">MORE</p>
-                </div>
-            </div>
-        </section>
-        <div class="sec__one--responsive page-threeres">
-            <img class="bkgimg__responsive" src="./img/top3.png" alt="">
-            <div class="container">
-                <div class="content--responsive">
-                    <h2 class="content__ttl fview__ttl">We value customers <br>more than anyone.</h2>
-                    <h3 class="content__message fview__message">We’re a creative digital marketing company that <br>helps you bring better results.</h3>
-                    <p class="content__btn fview__btn content__btn--responsive">MORE</p>
-                </div>
-            </div>
-        </div>
-        <div class="slide__btn">
-            <div class="container">
-                <i class="fas fa-circle slide__btn--icon btn__active"></i>
-                <i class="fas fa-circle slide__btn--icon"></i>
-                <i class="fas fa-circle slide__btn--icon"></i>
-            </div>
-        </div>
+        </div> -->
         <section class="sec__two" id="Activities">
             <div class="container">
                 <h1 class="sec__ttl">Activities</h1>
@@ -144,8 +168,20 @@
                             <i class="fas angle-icon fa-angle-up flex--mrzero"></i>
                         </div>
                         <div class="faq__item--ans flex">
-                            <span class="mark--ans">A</span>
-                            <h3 class="message--faq">It is answer.</h3>
+                            <span class="mark--ans" style="display: inline-block;">A</span>
+                            <h3 class="message--faq" style="display: inline-block;">It is answer.</h3>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__item--qus flex">
+                            <span class="mark--qus">Q</span>
+                            <h3 class="message--faq">It is question.</h3>
+                            <i class="fas angle-icon fa-angle-down flex--mrzero"></i>
+                            <i class="fas angle-icon fa-angle-up flex--mrzero"></i>
+                        </div>
+                        <div class="faq__item--ans flex" >
+                            <span class="mark--ans" style="display: inline-block;">A</span>
+                            <h3 class="message--faq" style="display: inline-block;">It is answer.</h3>
                         </div>
                     </div>
                     <div class="faq">
@@ -156,20 +192,8 @@
                             <i class="fas angle-icon fa-angle-up flex--mrzero"></i>
                         </div>
                         <div class="faq__item--ans flex">
-                            <span class="mark--ans">A</span>
-                            <h3 class="message--faq">It is answer.</h3>
-                        </div>
-                    </div>
-                    <div class="faq">
-                        <div class="faq__item--qus flex">
-                            <span class="mark--qus">Q</span>
-                            <h3 class="message--faq">It is question.</h3>
-                            <i class="fas angle-icon fa-angle-down flex--mrzero"></i>
-                            <i class="fas angle-icon fa-angle-up flex--mrzero"></i>
-                        </div>
-                        <div class="faq__item--ans flex">
-                            <span class="mark--ans">A</span>
-                            <h3 class="message--faq">It is answer.</h3>
+                            <span class="mark--ans" style="display: inline-block;">A</span>
+                            <h3 class="message--faq" style="display: inline-block;">It is answer.</h3>
                         </div>
                     </div>
                 </div>

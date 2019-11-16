@@ -40,13 +40,13 @@
     }
 
     .page-twores{
-        display: none;
+        display: block;
     }
     .page-twores .content__btn--responsive{
         visibility: hidden;
     }
     .page-threeres{
-        display: none;
+        display: block;
     }
     .page-threeres .content__btn--responsive{
         visibility: hidden;
@@ -61,6 +61,16 @@
     .content__btn--responsive{
         margin: 0 auto;
     }
+
+    .fview__message{
+        margin-bottom: 20px;
+    }
+
+    .content--responsive{
+        padding-bottom: 50px;
+    }
+
+    
 }
 
 /* スマホ用レイアウト:680px以下 */
@@ -73,9 +83,7 @@
         display: none;
     }
 
-    .flex--wrap-f{
-        flex-wrap: wrap;
-    }
+    
 
     .fnav__sns{
         margin: 0 auto;
@@ -152,4 +160,23 @@
         line-height: 60px;
         color: white;
     }
+    .flex--wrap-f{
+        flex-wrap: wrap;
+    }
+
+    .fnav__list{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .fnav__sns{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .sec__ttl{
+        padding: 60px 0 40px 0;
+    }
+    
 }
