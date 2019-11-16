@@ -138,9 +138,29 @@
     /* border: 2px solid #333333; */
     /* ヘッダー一固定調整用 */
     margin-top: 80px;
-    background-image: url(../img/top1.png);
     background-repeat: no-repeat;
     background-position: right 62.5%;
+  }
+  .page-one{
+    background-image: url(../img/top1.png);
+  }
+  .page-two{
+    background-image: url(../img/top2.png);
+    display: none;
+  }
+  .page-three{
+    background-image: url(../img/top3.png);
+    display: none;
+  }
+
+  .page-oneres{
+    display: none;
+  }
+  .page-twores{
+    display: none;
+  }
+  .page-threeres{
+    display: none;
   }
 
   .sec__one--responsive{

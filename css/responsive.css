@@ -6,7 +6,7 @@
     }
 
     .flex--reverse{
-        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
     }
 
     .content{
@@ -34,6 +34,22 @@
     .bkgimg__responsive{
         margin: 0 auto;
         width: 100%;
+    }
+    .page-oneres{
+        display: block;
+    }
+
+    .page-twores{
+        display: none;
+    }
+    .page-twores .content__btn--responsive{
+        visibility: hidden;
+    }
+    .page-threeres{
+        display: none;
+    }
+    .page-threeres .content__btn--responsive{
+        visibility: hidden;
     }
     
     .content--responsive{
