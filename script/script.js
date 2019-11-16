@@ -68,31 +68,31 @@ $(function(){
     // });
 
     //トップ画像のスライド(時間切り替え)
-    setInterval(function(){
-        if($('.slide--one').hasClass('active')){
-            $('.slide--one').removeClass('active');
-            $('.slide--two').addClass('active');
-        } else if ($('.slide--two').hasClass('active')){
-            $('.slide--two').removeClass('active');
-            $('.slide--three').addClass('active');
-        } else {
-            $('.slide--three').removeClass('active');
-            $('.slide--one').addClass('active');
-        }
-    },5000);
-    //トップ画像のスライド(ボタン切り替え)
-    $('.index__btn--one').click(function() {
-        $(this).parent().parent().removeClass('active');
-        $('.slide--one').addClass('active');
-    });
-    $('.index__btn--two').click(function() {
-        $(this).parent().parent().removeClass('active');
-        $('.slide--two').addClass('active');
-    });
-    $('.index__btn--three').click(function() {
-        $(this).parent().parent().removeClass('active');
-        $('.slide--three').addClass('active');
-    });
+    // setInterval(function(){
+    //     if($('.slide--one').hasClass('active')){
+    //         $('.slide--one').removeClass('active');
+    //         $('.slide--two').addClass('active');
+    //     } else if ($('.slide--two').hasClass('active')){
+    //         $('.slide--two').removeClass('active');
+    //         $('.slide--three').addClass('active');
+    //     } else {
+    //         $('.slide--three').removeClass('active');
+    //         $('.slide--one').addClass('active');
+    //     }
+    // },5000);
+    // //トップ画像のスライド(ボタン切り替え)
+    // $('.index__btn--one').click(function() {
+    //     $(this).parent().parent().removeClass('active');
+    //     $('.slide--one').addClass('active');
+    // });
+    // $('.index__btn--two').click(function() {
+    //     $(this).parent().parent().removeClass('active');
+    //     $('.slide--two').addClass('active');
+    // });
+    // $('.index__btn--three').click(function() {
+    //     $(this).parent().parent().removeClass('active');
+    //     $('.slide--three').addClass('active');
+    // });
 
 
     $('.angle-icon').click(function() {
@@ -109,7 +109,4 @@ $(function(){
             $answer.slideDown();
         }
     });
-
-
-
 });

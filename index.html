@@ -5,17 +5,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>JS-STUDIO</title>
-<!-- <script type="text/javascript" src="./script/jquery.bgswitcher.js"></script> -->
-<!-- <script type="text/javascript" src="./script/jquery.slide.js"></script> -->
-
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 <link rel="stylesheet" type="text/css" href="./css/reset.css">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" href="./css/swiper.css">
 <link rel="stylesheet" type="text/css" href="./css/responsive.css">
 </head>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="./script/script.js"></script>
+<script src="./script/swiper.js"></script>
     <header>
         <div class="container">
             <div class="header flex">
@@ -35,62 +34,31 @@
         </nav>
     </header>
     <main class="main">
-        <div id="slide">
-            <div class="slide--one active">
-                <div class="sec__one bg-slider page-one">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide page-one">
                     <div class="container">
+                        <img class="swiper-slide swiper-slide-res" src="./img/top1.png" alt="トップ1">
                         <div class="content">
                             <h2 class="content__ttl fview__ttl">We value customers <br>more than anyone.</h2>
                             <h3 class="content__message fview__message">We’re a creative digital marketing company <br class="br-sp" >that <br class="br-sp-none">helps you bring better results.</h3>
-                            <p class="content__btn fview__btn">MORE</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="sec__one--responsive page-oneres">
-                        <img class="bkgimg__responsive" src="./img/top1.png" alt="">
-                        <div class="container">
-                            <div class="content--responsive">
-                                <h2 class="content__ttl fview__ttl">We value customers <br>more than anyone.</h2>
-                                <h3 class="content__message fview__message">We’re a creative digital marketing company that <br>helps you bring better results.</h3>
-                                <p class="content__btn fview__btn content__btn--responsive">MORE</p>
-                            </div>
-                        </div>
-                </div>
-                <div class="slide__btn">
-                    <i class="fas fa-circle slide__btn--icon index__btn--one btn__active"></i>
-                    <i class="fas fa-circle slide__btn--icon index__btn--two"></i>
-                    <i class="fas fa-circle slide__btn--icon index__btn--three"></i>
-                </div>
-            </div>
-            <div class="slide--two">
-                <div class="sec__one bg-slider page-two">
-                    <div class="container">
-                        <div class="content">
-                            <h2 class="content__ttl fview__ttl">We’re a creative <br>marketing team</h2>
-                            <h3 class="content__message fview__message">We’re a creative digital marketing company <br>that helps you bring better results.</h3>
-                            <p class="content__btn fview__btn">MORE</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="sec__one--responsive page-twores">
-                    <img class="bkgimg__responsive" src="./img/top2.png" alt="">
-                    <div class="container">
-                        <div class="content--responsive">
-                            <h2 class="content__ttl fview__ttl">We’re a creative <br>marketing team</h2>
-                            <h3 class="content__message fview__message">We’re a creative digital marketing company <br>that helps you bring better results.</h3>
                             <p class="content__btn fview__btn content__btn--responsive">MORE</p>
                         </div>
                     </div>
                 </div>
-                <div class="slide__btn">
-                    <i class="fas fa-circle slide__btn--icon index__btn--one"></i>
-                    <i class="fas fa-circle slide__btn--icon index__btn--two btn__active"></i>
-                    <i class="fas fa-circle slide__btn--icon index__btn--three"></i>
-                </div>
-            </div>
-            <div class="slide--three">
-                <div class="sec__one bg-slider page-three">
+                <div class="swiper-slide page-two">
                     <div class="container">
+                        <img class="swiper-slide swiper-slide-res" src="./img/top2.png" alt="トップ2">
+                        <div class="content">
+                            <h2 class="content__ttl fview__ttl">We’re a creative <br>marketing team</h2>
+                            <h3 class="content__message fview__message">We’re a creative digital marketing company <br>that helps you bring better results.</h3>
+                            <p class="content__btn fview__btn">MORE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide page-three">
+                    <div class="container">
+                        <img class="swiper-slide swiper-slide-res" src="./img/top3.png" alt="トップ3">
                         <div class="content">
                             <h2 class="content__ttl fview__ttl">Enjoy your Website <br>and make it better!</h2>
                             <h3 class="content__message fview__message">Enjoy a combination of strategy, results, <br>and service, that create the best experience <br>possible.</h3>
@@ -98,23 +66,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="sec__one--responsive page-threeres">
-                    <img class="bkgimg__responsive" src="./img/top3.png" alt="">
-                    <div class="container">
-                        <div class="content--responsive">
-                            <h2 class="content__ttl fview__ttl">Enjoy your Website <br>and make it better!</h2>
-                            <h3 class="content__message fview__message">Enjoy a combination of strategy, results, <br>and service, that create the best <br>experience possible.</h3>
-                            <p class="content__btn fview__btn content__btn--responsive">MORE</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide__btn">
-                    <i class="fas fa-circle slide__btn--icon index__btn--one"></i>
-                    <i class="fas fa-circle slide__btn--icon index__btn--two"></i>
-                    <i class="fas fa-circle slide__btn--icon index__btn--three btn__active"></i>
-                </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
+        <script src="./script/swiper.js"></script>
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            autoplay: {
+            delay: 5000,
+            disableOnInteraction: true
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            }
+        });
+        </script>
         <section class="sec__two" id="Activities">
             <div class="container">
                 <h2 class="sec__ttl">Activities</h2>

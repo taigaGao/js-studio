@@ -98,6 +98,8 @@
   }
   .content{
     width: 385px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .content__ttl{
     line-height: 35px;
@@ -144,7 +146,7 @@
   /* ======================================================
   セクション①
   ========================================================= */
-  .sec__one{
+  .swiper-slide{
     width: 100%;
     /* 初期確認用 */
     background-color: white;
@@ -160,11 +162,12 @@
   }
   .page-two{
     background-image: url(../img/top2.png);
-    /* display: none; */
   }
   .page-three{
     background-image: url(../img/top3.png);
-    /* display: none; */
+  }
+  .swiper-slide-res{
+    display: none;
   }
 
   .page-oneres{
@@ -218,25 +221,12 @@
     color: #3BB6D5;
   }
 
-  .slide__btn{
-    text-align: center;
-    background-color: white;
-    cursor: pointer;
-  }
-
   .slide__btn--icon{
     color: #D5D5D5;
     line-height: 36px;
-    font-size: 22px;
+    font-size: 12px;
     padding-right: 7px;
   }
-
-  .btn__active{
-    color: #3BB6D5;
-  }
-
-
-
   /* ======================================================
   セクション②
   ========================================================= */
