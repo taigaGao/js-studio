@@ -4,6 +4,7 @@
   
   body {
     font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+    width: 100%;
   }
   
   li {
@@ -13,18 +14,39 @@
   a {
     text-decoration: none;
   }
+  h1,h2,h3,p,a{
+    color: #555555;
+    font-weight: bold;
+  }
 
   .container{
     max-width:980px;
-    width: 100%;
+    width: 76.5%;
     height: 100%;
     margin: 0 auto;
     /* 確認用 */
-    border: 2px solid #333333;
+    /* border: 2px solid #333333; */
   }
 
   .flex{
     display: flex;
+  }
+
+  .flex--reverse{
+    flex-flow: row-reverse wrap-reverse;
+  }
+
+  .flex--justify{
+    justify-content: space-between;
+  }
+
+  .flex--mlzero{
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .flex--mrzero{
+    margin-left: auto;
+    margin-right: 0;
   }
 
   /* ======================================================
@@ -33,12 +55,29 @@
   /* 初期確認用 */
   header{
     width: 100%;
-    width: 100%;
-    height: 100px;
+    height: 80px;
     position: fixed;
     top: 0px;
     left: 0px;
     z-index: 10;
+    box-shadow: 0 3px 6px #00000029;
+    background-color: white;
+    /* filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6)); */
+  }
+  .logo{
+    font-size: 28px;
+    color: #3BB6D5;
+    line-height: 80px;
+  }
+  .snav__list{
+    font-size: 18px;
+    margin-left: 28px;
+    line-height: 80px;
+    color: #555555;
+  }
+
+  .snav-bar{
+    display: none;
   }
 
 
@@ -52,9 +91,39 @@
   .main{
     width: 100%;
     /* 初期確認用 */
-    background-color: green;
-    top: 100px;
-    left: 0px;
+    /* background-color: green; */
+    /* top: 80px;
+    left: 0px; */
+  }
+  .content{
+    min-width: 360px;
+  }
+  .content__ttl{
+    line-height: 35px;
+    margin-bottom: 40px;
+  }
+  .content__message{
+    line-height: 27px;
+    margin-bottom: 40px;
+  }
+
+  .content__btn{
+    width: 175px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border:1px solid #3BB6D5;
+    border-radius: 45px;
+    box-shadow: 0px 3px 6px #00000029;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .sec__ttl{
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+    font-size: 32px;
   }
 
 
@@ -65,12 +134,70 @@
     width: 100%;
     /* 初期確認用 */
     background-color: white;
-    height: 500px;
-    border: 2px solid #333333;
+    height: 480px;
+    /* border: 2px solid #333333; */
     /* ヘッダー一固定調整用 */
-    margin-top: 100px;
+    margin-top: 80px;
+    background-image: url(../img/top1.png);
+    background-repeat: no-repeat;
+    background-position: right 62.5%;
   }
 
+  .sec__one--responsive{
+    margin-top: 80px;
+    display: none;
+  }
+
+  .sec__one .container{
+    display: table;
+  }
+
+  .sec__one .content{
+    display: table-cell;
+    vertical-align :middle;
+  }
+
+  .fview__ttl{
+    font-size: 42px;
+  }
+
+  .fview__message{
+    font-size: 16px;
+  }
+
+  .fview__btn{
+    color: #FFFFFF;
+    background-color: #3BB6D5;
+  }
+
+  .act__ttl{
+    font-size: 27px;
+  }
+
+  .act__message{
+    font-size: 14px;
+  }
+
+  .act__btn{
+    color: #3BB6D5;
+  }
+
+  .slide__btn{
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .slide__btn--icon{
+    color: #D5D5D5;
+    line-height: 36px;
+    font-size: 22px;
+    padding-right: 7px;
+  }
+
+  .btn__active{
+    color: #3BB6D5;
+  }
 
 
 
@@ -81,8 +208,16 @@
     width: 100%;
     /* 初期確認用 */
     background-color: white;
-    height: 1000px;
-    border: 2px solid #333333;
+    /* height: 1000px; */
+    /* border: 2px solid #333333; */
+  }
+
+  .contents{
+    margin-bottom: 100px;
+  }
+
+  .content__img{
+    max-width: 500px;
   }
 
   /* ======================================================
@@ -92,8 +227,18 @@
     width: 100%;
     /* 初期確認用 */
     background-color: white;
-    height: 300px;
-    border: 2px solid #333333;
+    /* height: 300px; */
+    /* border: 2px solid #333333; */
+  }
+
+  .faq{
+    width: 100%;
+  }
+
+  .content__movie{
+    display: block;
+    margin: 0 auto;
+    
   }
 
   /* ======================================================
@@ -103,10 +248,68 @@
     width: 100%;
     /* 初期確認用 */
     background-color: white;
-    height: 300px;
-    border: 2px solid #333333;
+    /* height: 300px; */
+    /* border: 2px solid #333333; */
   }
-  
+  .faqs{
+    padding-bottom: 100px;
+    margin: 0 auto;
+    width: 71.4%;
+  }
+  .faq{
+    margin-bottom: 20px;
+  }
+
+  .faq__item--qus{
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 6px #00000029;
+    z-index: 3;
+    position: relative;
+  }
+  .faq__item--ans{
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 6px #00000029;
+    z-index: 2;
+    display: none;
+  }
+  .mark--qus{
+    padding: 0 10px;
+    background-color: #3BB6D5;
+    color: #FFFFFF;
+    line-height: 36px;
+    font-size: 20px;
+  }
+  .mark--ans{
+    padding: 0 10px;
+    color: #3BB6D5;
+    background-color: #FFFFFF;
+    line-height: 36px;
+    font-size: 20px;
+  }
+  .message--faq{
+    line-height: 36px;
+    font-size: 18px;
+    padding-left: 34px;
+  }
+
+  .fa-angle-up{
+    display: none;
+  }
+
+  .angle-icon{
+    color: #3BB6D5;
+    line-height: 36px;
+    font-size: 22px;
+    padding-right: 7px;
+  }
+
+
+  .fadein {
+    opacity : 0;
+    transform: translateY(20px);
+    transition: all 1s;
+  }
+
 
 
 
@@ -126,7 +329,27 @@
   footer{
     width: 100%;
     /* 初期確認用 */
-    background-color: red;
-    height: 100px;
+    /* background-color: red; */
+    height: 80px;
     
+  }
+
+  .faicon {
+    color: #3BB6D5;
+    line-height: 36px;
+    font-size: 20px;
+    padding-right: 30px;
+  }
+
+  .fnav__list--item{
+    font-size: 18px;
+    padding-right: 28px;
+  }
+  
+
+  .copy{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 16px;
+    font-size: 12px;
   }

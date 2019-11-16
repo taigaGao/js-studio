@@ -5,65 +5,158 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Document</title>
-<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="./script/script.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 <link rel="stylesheet" type="text/css" href="./css/reset.css">
-<link rel="stylesheet" type="text/css" href="./css/responsive.css">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/responsive.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="header flex">
-                <h1 class="logo"></h1>
-                <nav class="snav">
-                    <a href="" class="snav__list"></a>
-                    <a href="" class="snav__list"></a>
-                    <a href="" class="snav__list"></a>
+                <h1 class="logo">JS-STUDIO</h1>
+                <nav class="snav flex--mrzero">
+                    <a href="#Activities" class="snav__list">Activities</a>
+                    <a href="#Introduction" class="snav__list">Introduction</a>
+                    <a href="#Q&A" class="snav__list">Q&A</a>
                 </nav>
+                <i class="fas fa-bars flex--mrzero snav-bar" id="snav-bar"></i>
             </div>
         </div>
+        <nav class="snav-bar-menu" style="display: none;">
+            <a href="#Activities" class="snav__list snav__list--bar">Activities</a>
+            <a href="#Introduction" class="snav__list snav__list--bar">Introduction</a>
+            <a href="#Q&A" class="snav__list snav__list--bar">Q&A</a>
+        </nav>
     </header>
     <main class="main">
         <section class="sec__one">
             <div class="container">
                 <div class="content">
-                    <div class="content__ttl fview__ttl"></div>
-                    <div class="content__message fview__message"></div>
-                    <div class="content__btn fview__btn"></div>
-                </div>
-                <div class="slide__btn">
-                    <div class="slide__btn--one"></div>
-                    <div class="slide__btn--two"></div>
-                    <div class="slide__btn--three"></div>
+                    <h2 class="content__ttl fview__ttl">We value customers <br>more than anyone.</h2>
+                    <h3 class="content__message fview__message">We’re a creative digital marketing company that <br>helps you bring better results.</h3>
+                    <p class="content__btn fview__btn">MORE</p>
                 </div>
             </div>
         </section>
-        <section class="sec__two">
+        <div class="sec__one--responsive">
+            <img class="bkgimg__responsive" src="./img/top1.png" alt="">
             <div class="container">
-                <div class="sec__ttl"></div>
-                <div class="contents">
+                <div class="content--responsive">
+                    <h2 class="content__ttl fview__ttl">We value customers <br>more than anyone.</h2>
+                    <h3 class="content__message fview__message">We’re a creative digital marketing company that <br>helps you bring better results.</h3>
+                    <p class="content__btn fview__btn content__btn--responsive">MORE</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide__btn">
+            <div class="container">
+                <i class="fas fa-circle slide__btn--icon btn__active"></i>
+                <i class="fas fa-circle slide__btn--icon"></i>
+                <i class="fas fa-circle slide__btn--icon"></i>
+            </div>
+        </div>
+        <section class="sec__two" id="Activities">
+            <div class="container">
+                <h1 class="sec__ttl">Activities</h1>
+                <div class="contents flex flex--justify flex--wrap fadein">
                     <div class="content">
-                        <div class="content__ttl act__ttl"></div>
-                        <div class="content__message act__message"></div>
-                        <div class="content__btn act__btn"></div>
+                        <h2 class="content__ttl act__ttl">Making a plan together that <br>drives result.</h2>
+                        <h3 class="content__message act__message">Get the best tools, technologies, and results you’ve ever <br> had in your business.</h3>
+                        <p class="content__btn act__btn content__btn--responsive">READ MORE</p>
                     </div>
-                    <img class="content__img" src="./img/top1.png" alt="コンテンツ画像XX">
+                    <img class="content__img" src="./img/flow1.png" alt="コンテンツ画像XX">
+                </div>
+                <div class="contents flex flex--justify flex--reverse fadein">
+                    <div class="content">
+                        <h2 class="content__ttl act__ttl">Professional consultant</h2>
+                        <h3 class="content__message act__message">We provide everything that exactly fits your needs <br>such as creating contents, making videos and taking <br>photographs.</h3>
+                        <p class="content__btn act__btn content__btn--responsive">READ MORE</p>
+                    </div>
+                    <img class="content__img" src="./img/flow2.png" alt="コンテンツ画像XX">
+                </div>
+                <div class="contents flex flex--justify flex--wrap fadein">
+                    <div class="content">
+                        <h2 class="content__ttl act__ttl">Future-Proof Your Business</h2>
+                        <h3 class="content__message act__message">Know about the latest updates in digital marketing <br>before any of your competitors.</h3>
+                        <p class="content__btn act__btn content__btn--responsive">READ MORE</p>
+                    </div>
+                    <img class="content__img" src="./img/flow3.png" alt="コンテンツ画像XX">
                 </div>
             </div>
         </section>
-        <section class="sec__three">
+        <section class="sec__three" id="Introduction">
             <div class="container">
-                <p>test</p>
+                <h1 class="sec__ttl">Introduction</h1>
+                <iframe class="content__movie" width="560" height="315" src="https://www.youtube.com/embed/BlmQxS8H_pI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
-        <section class="sec__four">
+        <section class="sec__four" id="Q&A">
             <div class="container">
-                <p>test</p>
+                <h1 class="sec__ttl">Q&A</h1>
+                <div class="faqs">
+                    <div class="faq">
+                        <div class="faq__item--qus flex">
+                            <span class="mark--qus">Q</span>
+                            <h3 class="message--faq">It is question.</h3>
+                            <i class="fas angle-icon fa-angle-down flex--mrzero"></i>
+                            <i class="fas angle-icon fa-angle-up flex--mrzero"></i>
+                        </div>
+                        <div class="faq__item--ans flex">
+                            <span class="mark--ans">A</span>
+                            <h3 class="message--faq">It is answer.</h3>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__item--qus flex">
+                            <span class="mark--qus">Q</span>
+                            <h3 class="message--faq">It is question.</h3>
+                            <i class="fas angle-icon fa-angle-down flex--mrzero"></i>
+                            <i class="fas angle-icon fa-angle-up flex--mrzero"></i>
+                        </div>
+                        <div class="faq__item--ans flex">
+                            <span class="mark--ans">A</span>
+                            <h3 class="message--faq">It is answer.</h3>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <div class="faq__item--qus flex">
+                            <span class="mark--qus">Q</span>
+                            <h3 class="message--faq">It is question.</h3>
+                            <i class="fas angle-icon fa-angle-down flex--mrzero"></i>
+                            <i class="fas angle-icon fa-angle-up flex--mrzero"></i>
+                        </div>
+                        <div class="faq__item--ans flex">
+                            <span class="mark--ans">A</span>
+                            <h3 class="message--faq">It is answer.</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <div class="container"></div>
+        <div class="container">
+            <div class="footer flex flex--wrap-f">
+                <nav class="fnav__list flex">
+                    <a href="#" class="fnav__list--item">Member</a>
+                    <a href="#" class="fnav__list--item">Plan</a>
+                    <a href="#" class="fnav__list--item">Blog</a>
+                </nav>
+                <nav class="fnav__sns flex flex--mrzero">
+                    <i class="faicon fab fa-twitter"></i>
+                    <i class="faicon fab fa-facebook-square"></i>
+                    <i class="faicon fab fa-instagram"></i>
+                    <i class="faicon fas fa-envelope"></i>
+                    <i class="faicon fab fa-google-plus-g"></i>
+                </nav>
+            </div>
+            <div class="footer copy">
+                <h3>Copyright ©︎ iSara All Rights Reserved.</h3>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

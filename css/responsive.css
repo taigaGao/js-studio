@@ -1,5 +1,139 @@
-/* PCサイズ中の場合は以下を適用する:1280px以下 */
-/* @media all and (max-width: 1380px) {
-    
-} */
+/* タブレット用レイアウト:1080px以下 */
+@media all and (max-width: 1080px) {
 
+    .flex--wrap{
+        flex-flow: wrap-reverse;
+    }
+
+    .flex--reverse{
+        flex-wrap: wrap;
+    }
+
+    .content{
+        margin: 0 auto;
+        text-align: center;
+        min-width: 280px;
+    }
+
+    .content__img{
+        margin: 0 auto;
+    }
+    
+    .sec__one{
+        display: none;
+    }
+    
+    .bkgimg__esponsive{
+        width: 100%;
+    }
+
+    .sec__one--responsive{
+        display:block;
+    }
+
+    .bkgimg__responsive{
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .content--responsive{
+        text-align: center;
+        min-height: 254px;
+        padding-bottom: 50px;
+    }
+
+    .content__btn--responsive{
+        margin: 0 auto;
+    }
+}
+
+/* スマホ用レイアウト:680px以下 */
+@media all and (max-width: 680px) {
+    .container{
+        width: 90%;
+    }
+
+    .snav{
+        display: none;
+    }
+
+    .flex--wrap-f{
+        flex-wrap: wrap;
+    }
+
+    .fnav__sns{
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+    .fnav__list{
+        margin: 0 auto;
+    }
+
+    .fnav__list--item{
+        padding-right: 10px;
+    }
+
+    .faicon{
+        padding: 0 15px;
+    }
+
+    .content__img{
+        width: 100%;
+    }
+
+    .content__movie{
+        width: 100%;
+    }
+
+    .content__ttl{
+        font-size: 26px;
+    }
+    .content__message{
+        font-size: 12px;
+    }
+    .sec__ttl{
+        font-size: 21px;
+    }
+
+    .copy{
+        padding-top: 10px;
+    }
+
+    .mark--ans{
+        font-size: 14px;
+    }
+    .mark--qus{
+        font-size: 14px;
+    }
+
+    .message--faq{
+        line-height: 36px;
+        font-size: 12px;
+        padding-left: 34px;
+    }
+
+    .slide__btn--icon{
+        font-size: 18px;
+    }
+
+    .snav-bar{
+    display: block;
+    color: #3BB6D5;
+    line-height: 80px;
+    font-size: 40px;
+    padding-right: 7px;
+    }
+
+    .snav-bar-menu{
+        background-color: #3BB6D5;
+        width: 150px;
+        margin: 0 0 0 auto;
+        display: none;
+    }
+    .snav__list--bar{
+        display: block;
+        line-height: 60px;
+        color: white;
+    }
+}
