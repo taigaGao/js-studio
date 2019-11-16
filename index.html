@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Document</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<title>JS-STUDIO</title>
 <!-- <script type="text/javascript" src="./script/jquery.bgswitcher.js"></script> -->
 <!-- <script type="text/javascript" src="./script/jquery.slide.js"></script> -->
-<script type="text/javascript" src="./script/script.js"></script>
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 <link rel="stylesheet" type="text/css" href="./css/reset.css">
 <link rel="stylesheet" type="text/css" href="./css/style.css">
 <link rel="stylesheet" type="text/css" href="./css/responsive.css">
 </head>
 <body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./script/script.js"></script>
     <header>
         <div class="container">
             <div class="header flex">
@@ -34,13 +35,13 @@
         </nav>
     </header>
     <main class="main">
-        <section id="slide">
-            <li class="slide--one active">
+        <div id="slide">
+            <div class="slide--one active">
                 <div class="sec__one bg-slider page-one">
                     <div class="container">
                         <div class="content">
                             <h2 class="content__ttl fview__ttl">We value customers <br>more than anyone.</h2>
-                            <h3 class="content__message fview__message">We’re a creative digital marketing company that <br>helps you bring better results.</h3>
+                            <h3 class="content__message fview__message">We’re a creative digital marketing company <br class="br-sp" >that <br class="br-sp-none">helps you bring better results.</h3>
                             <p class="content__btn fview__btn">MORE</p>
                         </div>
                     </div>
@@ -60,8 +61,8 @@
                     <i class="fas fa-circle slide__btn--icon index__btn--two"></i>
                     <i class="fas fa-circle slide__btn--icon index__btn--three"></i>
                 </div>
-            </li>
-            <li class="slide--two">
+            </div>
+            <div class="slide--two">
                 <div class="sec__one bg-slider page-two">
                     <div class="container">
                         <div class="content">
@@ -86,8 +87,8 @@
                     <i class="fas fa-circle slide__btn--icon index__btn--two btn__active"></i>
                     <i class="fas fa-circle slide__btn--icon index__btn--three"></i>
                 </div>
-            </li>
-            <li class="slide--three">
+            </div>
+            <div class="slide--three">
                 <div class="sec__one bg-slider page-three">
                     <div class="container">
                         <div class="content">
@@ -102,7 +103,7 @@
                     <div class="container">
                         <div class="content--responsive">
                             <h2 class="content__ttl fview__ttl">Enjoy your Website <br>and make it better!</h2>
-                            <h3 class="content__message fview__message">Enjoy a combination of strategy, results, <br>and service, that create the best experience <br>possible.</h3>
+                            <h3 class="content__message fview__message">Enjoy a combination of strategy, results, <br>and service, that create the best <br>experience possible.</h3>
                             <p class="content__btn fview__btn content__btn--responsive">MORE</p>
                         </div>
                     </div>
@@ -112,22 +113,15 @@
                     <i class="fas fa-circle slide__btn--icon index__btn--two"></i>
                     <i class="fas fa-circle slide__btn--icon index__btn--three btn__active"></i>
                 </div>
-            </li>
-        </section>
-        <!-- <div class="slide__btn">
-            <div class="container">
-                <i class="fas fa-circle slide__btn--icon index-btn btn__active"></i>
-                <i class="fas fa-circle slide__btn--icon index-btn"></i>
-                <i class="fas fa-circle slide__btn--icon index-btn"></i>
             </div>
-        </div> -->
+        </div>
         <section class="sec__two" id="Activities">
             <div class="container">
-                <h1 class="sec__ttl">Activities</h1>
+                <h2 class="sec__ttl">Activities</h2>
                 <div class="contents flex flex--justify flex--wrap fadein">
                     <div class="content">
-                        <h2 class="content__ttl act__ttl">Making a plan together that <br>drives result.</h2>
-                        <h3 class="content__message act__message">Get the best tools, technologies, and results you’ve ever <br> had in your business.</h3>
+                        <h2 class="content__ttl act__ttl">Making a plan together <br class="br-sp" >that <br class="br-sp-none">drives result.</h2>
+                        <h3 class="content__message act__message">Get the best tools, <br class="br-sp" >technologies, and results you’ve ever <br> had in your business.</h3>
                         <p class="content__btn act__btn content__btn--responsive">READ MORE</p>
                     </div>
                     <img class="content__img" src="./img/flow1.png" alt="コンテンツ画像XX">
@@ -135,7 +129,7 @@
                 <div class="contents flex flex--justify flex--reverse fadein">
                     <div class="content">
                         <h2 class="content__ttl act__ttl">Professional consultant</h2>
-                        <h3 class="content__message act__message">We provide everything that exactly fits your needs <br>such as creating contents, making videos and taking <br>photographs.</h3>
+                        <h3 class="content__message act__message">We provide everything that <br class="br-sp" >exactly fits your needs <br class="br-sp">such as creating contents, <br class="br-sp" >making videos and taking <br class="br-sp-none">photographs.</h3>
                         <p class="content__btn act__btn content__btn--responsive">READ MORE</p>
                     </div>
                     <img class="content__img" src="./img/flow2.png" alt="コンテンツ画像XX">
@@ -152,13 +146,16 @@
         </section>
         <section class="sec__three" id="Introduction">
             <div class="container">
-                <h1 class="sec__ttl">Introduction</h1>
-                <iframe class="content__movie" width="560" height="315" src="https://www.youtube.com/embed/BlmQxS8H_pI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h2 class="sec__ttl">Introduction</h2>
+                <div class="youtube">
+                        <iframe class="content__movie" width="700" height="415" src="https://www.youtube.com/embed/BlmQxS8H_pI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
             </div>
         </section>
         <section class="sec__four" id="Q&A">
             <div class="container">
-                <h1 class="sec__ttl">Q&A</h1>
+                <h2 class="sec__ttl">Q&A</h2>
                 <div class="faqs">
                     <div class="faq">
                         <div class="faq__item--qus flex">

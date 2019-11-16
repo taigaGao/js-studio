@@ -1,5 +1,5 @@
 $(function(){
-    //⑤コンテンツがスクロール時に浮き上がってくる仕様(ライブラリの使用)
+    //コンテンツがスクロール時に浮き上がってくる仕様(ライブラリの使用)
     $(window).scroll(function (){
         $('.fadein').each(function(){
             var targetElement = $(this).offset().top;
@@ -12,7 +12,7 @@ $(function(){
         });
     });
 
-    //②ハンバーガーメニューの実装
+    //ハンバーガーメニューの実装
     $('#snav-bar').click(function() {
         if ($('.snav-bar-menu').css('display') == 'block') {
             $('.snav-bar-menu').slideUp()
@@ -20,7 +20,8 @@ $(function(){
             $('.snav-bar-menu').slideDown()
         }
     });
-        //メニュー表示時にメニュー外をクリックした時にメニューを非表示にする
+    
+    //メニュー表示時にメニュー外をクリックした時にメニューを非表示にする
     $('#snav-bar').click(function() {　event.stopPropagation();　});
     $(document).click(function() {
         if ($('.snav-bar-menu').css('display') == 'block') {

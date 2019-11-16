@@ -69,12 +69,18 @@
     .content--responsive{
         padding-bottom: 50px;
     }
-
+    .content__movie{
+        width: 100%;
+        /* height: 59%; */
+    }
     
 }
 
 /* スマホ用レイアウト:680px以下 */
 @media all and (max-width: 680px) {
+    .logo{
+        font-size: 24px;
+    }
     .container{
         width: 90%;
     }
@@ -106,9 +112,7 @@
         width: 100%;
     }
 
-    .content__movie{
-        width: 100%;
-    }
+    
 
     .content__ttl{
         font-size: 26px;
@@ -178,5 +182,24 @@
     .sec__ttl{
         padding: 60px 0 40px 0;
     }
-    
+    .br-sp{
+        display: block;
+    }
+    .br-sp-none{
+        display: none;
+    }
+
+    .youtube{
+        position:relative;
+        width:100%;
+        height:0;
+        padding-top:75%;
+    }
+    .youtube iframe{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
 }
